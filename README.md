@@ -1,13 +1,11 @@
 
-COded by ai
 
-The framework detects the following known vulnerable OpenSSH versions:
-- OpenSSH 8.5 - 9.7 (CVE-2024-6387)
-- OpenSSH 8.2 - 8.3 (CVE-2021-28041)
-- OpenSSH 7.4 - 7.5 (CVE-2020-14145)
-- OpenSSH 7.9 - 8.0 (CVE-2019-16905)
-- OpenSSH 7.7 - 7.8 (CVE-2018-15473)
-
+### **Multiple CVE Support**
+- **CVE-2024-6387**: Remote Code Execution (regreSSHion)
+- **CVE-2020-14145**: Username Enumeration via Timing Attack
+- **CVE-2021-28041**: Username Enumeration via Response Timing
+- **CVE-2019-16905**: Username Enumeration via Error Messages
+- **CVE-2018-15473**: Username Enumeration via Response Differences
 
 ##  Quick Start
 
@@ -142,3 +140,5 @@ Setup Issues???
 
 # Check permissions
 chmod +x no_regresh_launcher.py
+
+COded by me with ai.
