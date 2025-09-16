@@ -84,34 +84,6 @@ Features
 ### **Detailed Status Messages**
 ##  Menu Navigation
 
-```
-╔═══════════════════ Main Menu ═══════════════════╗
-║  1) Network Scanner                          ║
-║     (SSH Services & Vulnerability Scan)         ║
-║  2) Targeted Exploitation                     ║
-║     (CVE-2024-6387 & Other SSH Exploits)       ║
-║  3) Listener Management                       ║
-║     (Python, Netcat & Socat Listeners)         ║
-║  4) System Status                            ║
-║     (System Check & Configuration)              ║
-║  5) Log Viewer                               ║
-║     (Session Logs & Reports)                    ║
-║  6) Exit                                      ║
-╚═════════════════════════════════════════════════╝
-
-### **System Status**
-```
-╔═══════════════ System Status ═══════════════╗
-║ Platform:        Linux-5.4.0-74-generic     ║
-║ Python:          3.9.7                      ║
-║ Architecture:     64bit                      ║
-║ Hostname:        pentest-box                ║
-║ User:            pentester                  ║
-║ Public IP:       203.0.113.42              ║
-║ Memory:          7.2 GB                     ║
-║ Disk Space:      45.2 GB                    ║
-╚══════════════════════════════════════════════╝
-```
 
 Supported Vulnerable Versions
 
@@ -142,3 +114,4 @@ Setup Issues???
 chmod +x no_regresh_launcher.py
 
 COded by me with ai.
+
