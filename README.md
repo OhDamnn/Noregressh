@@ -1,117 +1,112 @@
 
+Originally I wanted to build a regreSHHion scanner and exploiter; I then added additional CVEs to it. If anyone can help me expand parts of the project, please get in touch.
 
-### **Multiple CVE Support**
-- **CVE-2024-6387**: Remote Code Execution (regreSSHion)
-- **CVE-2020-14145**: Username Enumeration via Timing Attack
-- **CVE-2021-28041**: Username Enumeration via Response Timing
-- **CVE-2019-16905**: Username Enumeration via Error Messages
-- **CVE-2018-15473**: Username Enumeration via Response Differences
+WELCOME TO NOREGRESSH 
 
-##  Quick Start
+norregressh is a penetration-testing framework focused on OpenSSH regressions and multiple CVEs.
+It includes discovery, targeted exploitation workflows, listener management and post-exploit helpers.
 
-### 1. Automatic Installation
+Use only with explicit authorization.
+
+
+Happy Hacking!
+
+
+---
+
+## Quick start (GitHub-ready)
+
 ```bash
-# Download framework and start setup
-python setup.py
-```
+# Clone the repo
+git clone https://github.com/OhDamnn/Noregressh.git
+cd Noregressh
 
-### 2. Manual Installation
+# Automatic setup (recommended)
+sudo python3 setup.py
 
-# Install dependencies
+# Or manual install with
+git clone https://github.com/OhDamnn/Noregressh/
+chmod +x *.py
 pip install -r requirements.txt
-
-# Start framework
-python no_regresh_launcher.py
+python3 no_regresh_launcher.py
 ```
 
-Features 
+If the launcher is not executable:
 
-### **Enhanced Status Messages**
-- **Detailed Debug Information**: Complete logging of all operations
-### **Advanced Listener Functions**
-- **Python Listener**: Complete alternative to Netcat with enhanced features
-- **Interactive Shell**: Direct command execution with security checks
-- **Multi-Listener Support**: Simultaneous management of multiple listeners
-- **Automatic Fallback**: Switch between Python, Netcat, and Socat listeners
-- **File Transfer**: Upload/download files through listener connections
-- **Screenshot Capture**: Take screenshots on target systems
-- **Keylogger**: Basic keylogging functionality
-### **Extended Payload Options**
-- **Reverse Shell**: Bash, Python, PowerShell, Perl, and Base64-encoded variants
-- **Bind Shell**: Automatic port configuration
-- **Custom Shellcode**: x64 shellcode with NOP-sled
-- **Web Shell**: PHP web shell for web-based targets
-- **Generic Exploits**: Customizable exploit patterns
-
-### **Advanced System Verification**
-- **IP Validation**: Complete reachability check before exploit
-- **Firewall Detection**: Automatic detection of blocking mechanisms
-- **Dependency Check**: Automatic installation of missing dependencies
-- **System Reports**: Detailed JSON reports for documentation
-- **Antivirus Detection**: Check for common antivirus software
-
-### **Multiple CVE Support**
-- **CVE-2024-6387**: Remote Code Execution (regreSSHion)
-- **CVE-2020-14145**: Username Enumeration via Timing Attack
-- **CVE-2021-28041**: Username Enumeration via Response Timing
-- **CVE-2019-16905**: Username Enumeration via Error Messages
-- **CVE-2018-15473**: Username Enumeration via Response Differences
-
-
-
-
- Main Modules
-
-### **1. Network Scanner**
-- Multi-threading SSH service discovery
-- Automatic vulnerability detection for multiple CVEs
-- IP range and single target scans
-- CSV export for further analysis
-- Custom CVE selection
-
-### **2. Targeted Exploitation**
-- CVE-2024-6387 exploit with various payloads
-- Automatic listener configuration
-- Timing-optimized exploit sequences
-- Success tracking and statistics
-- Post-exploitation actions
-
-### **3. Listener Management**
-### **4. System Status**
-### **5. Log Viewer**
-### **Listener Management**
-##  Enhanced Output
-### **Detailed Status Messages**
-##  Menu Navigation
-
-
-Supported Vulnerable Versions
-
-The framework detects the following known vulnerable OpenSSH versions:
-- OpenSSH 8.5 - 9.7 (CVE-2024-6387)
-- OpenSSH 8.2 - 8.3 (CVE-2021-28041)
-- OpenSSH 7.4 - 7.5 (CVE-2020-14145)
-- OpenSSH 7.9 - 8.0 (CVE-2019-16905)
-- OpenSSH 7.7 - 7.8 (CVE-2018-15473)
-
-# Important Notes
-
-### **For Authorized Testing Only!**
-- This tool is exclusively for authorized penetration testing
-- Use against foreign systems without permission is illegal
-- Users are responsible for lawful use
-- **No Memory Leaks**: Automatic memory management
-- **Better Error Handling**: Detailed exception handling
-- **Thread Safety**: Improved multi-threading implementation
-- **Extended Logs**: Structured logging
-
-
-Troubleshooting
-
-Setup Issues???
-
-# Check permissions
+```bash
 chmod +x no_regresh_launcher.py
+```
 
-COded by me with ai.
+---
 
+## Requirements
+
+* Python 3.x
+* OS/network tools available on typical pentest workstations
+* Run with appropriate permissions for installed dependencies
+
+---
+
+## Supported CVEs Supported vulnerable OpenSSH versions (detected)
+
+* **CVE-2024-6387** — Remote Code Execution (regreSSHion)
+* **CVE-2020-14145** — Username enumeration via timing
+* **CVE-2021-28041** — Username enumeration via response timing
+* **CVE-2019-16905** — Username enumeration via error messages
+* **CVE-2018-15473** — Username enumeration via response differences
+
+* OpenSSH 8.5 – 9.7 (CVE-2024-6387)
+* OpenSSH 8.2 – 8.3 (CVE-2021-28041)
+* OpenSSH 7.4 – 7.5 (CVE-2020-14145)
+* OpenSSH 7.9 – 8.0 (CVE-2019-16905)
+* OpenSSH 7.7 – 7.8 (CVE-2018-15473)
+
+---
+
+## Features (condensed)
+
+* Multi-threaded network scanner with CSV export.
+* Automatic CVE detection and targeted exploitation flows.
+* Flexible payloads: reverse shells, bind shells, web shells, base64 variants.
+* Listener manager with Python listener, Netcat/Socat fallback, multi-listener support.
+* File transfer, screenshot capture, basic keylogger.
+* System checks: IP reachability, firewall detection, dependency auto-install.
+* Structured JSON reports and detailed logs.
+* Thread-safe design and improved error handling.
+
+---
+
+
+
+## Usage notes & safety
+
+* **Authorized testing only.** Illegal use is the user's responsibility.
+* The tool does not add new exploits beyond the included CVE checks.
+* Review and audit code before running in any environment.
+* Add a license and supply explicit scope and authorization before any engagement.
+
+---
+
+## Troubleshooting
+
+* If setup fails, install dependencies manually: `pip install -r requirements.txt`.
+* If permissions block execution: `chmod +x no_regresh_launcher.py`.
+* For environment errors on some distros, use a virtualenv.
+
+---
+
+## Contributing
+
+Open an issue or submit a PR. Keep changes focused, documented, and reversible. Include tests when adding detection or exploit code.
+
+---
+
+## License
+
+Add a LICENSE file to this repository. Recommended: choose an appropriate open-source license (MIT/Apache/BSD) and state permitted use.
+
+---
+
+## Contact
+
+Use GitHub Issues or Pull Requests for feedback, bugs, or questions. Any ai vibecoders wanna collab? PM
