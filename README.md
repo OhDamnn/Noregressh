@@ -1,20 +1,31 @@
 
-Originally I wanted to build a regreSHHion scanner and exploiter; I then added additional CVEs to it. If anyone can help me expand parts of the project, please get in touch.
+Originally I wanted to build a regreSHHion scanner and exploiter.
+I then added additional CVEs to it. 
+If anyone can help me expand parts of the project, please get in touch.
+
+
+
 
 WELCOME TO NOREGRESSH 
 
-norregressh is a penetration-testing framework focused on OpenSSH regressions and multiple CVEs.
-It includes discovery, targeted exploitation workflows, listener management and post-exploit helpers.
+Norregressh is a penetration-testing framework focused on OpenSSH regressions and multiple CVEs.
+It includes discovery, 
+targeted exploitation workflows, 
+listener management 
+and post-exploit helpers,
+systemmonitor shows ips, 
+checks if ports are open,
+listener-helper,
+
 
 Use only with explicit authorization.
 
-
 Happy Hacking!
-
+coded with ai by me.
 
 ---
 
-## Quick start (GitHub-ready)
+### Quick start 
 
 ```bash
 # Clone the repo
@@ -23,13 +34,17 @@ cd Noregressh
 
 # Automatic setup (recommended)
 sudo python3 setup.py
+```
 
+```bash
 # Or manual install with
 git clone https://github.com/OhDamnn/Noregressh/
 chmod +x *.py
 pip install -r requirements.txt
 python3 no_regresh_launcher.py
 ```
+
+
 
 If the launcher is not executable:
 
@@ -39,13 +54,6 @@ chmod +x no_regresh_launcher.py
 
 ---
 
-## Requirements
-
-* Python 3.x
-* OS/network tools available on typical pentest workstations
-* Run with appropriate permissions for installed dependencies
-
----
 
 ## Supported CVEs Supported vulnerable OpenSSH versions (detected)
 
@@ -95,18 +103,41 @@ chmod +x no_regresh_launcher.py
 
 ---
 
+
+
+## Requirements
+
+* Python 3.x
+* OS/network tools available on typical pentest workstations
+* Run with appropriate permissions for installed dependencies
+
+---
+
+
 ## Contributing
 
 Open an issue or submit a PR. Keep changes focused, documented, and reversible. Include tests when adding detection or exploit code.
 
 ---
 
-## License
 
-Add a LICENSE file to this repository. Recommended: choose an appropriate open-source license (MIT/Apache/BSD) and state permitted use.
 
----
+Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
 
-## Contact
+Copyright (c) 2025 [OhDamn](https://github.com/OhDamnn/Noregressh/)
 
-Use GitHub Issues or Pull Requests for feedback, bugs, or questions. Any ai vibecoders wanna collab? PM
+This work is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License.
+You are free to:
+
+  • Share — copy and redistribute the material in any medium or format
+  • Adapt — remix, transform, and build upon the material
+
+Under the following terms:
+
+  • Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made.
+  • NonCommercial — You may not use the material for commercial purposes.
+
+For the full license text, see: https://creativecommons.org/licenses/by-nc/4.0/
+
+SPDX-License-Identifier: CC-BY-NC-4.0
+
