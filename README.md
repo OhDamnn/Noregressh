@@ -113,8 +113,8 @@ chmod +x no_regresh_launcher.py
 
 ---
 SCAN
+<img width="899" height="1189" alt="image" src="https://github.com/user-attachments/assets/ee58ca95-5ccf-428f-8871-39c4594a2864" />
 
-<img width="899" height="1189" alt="image" src="https://github.com/user-attachments/assets/418d8f45-5b37-4544-b0d4-ecefdd3af827" />
 
 
 THE SCAN
@@ -155,6 +155,7 @@ Under the following terms:
 For the full license text, see: https://creativecommons.org/licenses/by-nc/4.0/
 
 SPDX-License-Identifier: CC-BY-NC-4.0
+
 
 
 
