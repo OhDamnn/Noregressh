@@ -112,6 +112,21 @@ chmod +x no_regresh_launcher.py
 * Run with appropriate permissions for installed dependencies
 
 ---
+SCAN
+
+<img width="899" height="1189" alt="image" src="https://github.com/user-attachments/assets/418d8f45-5b37-4544-b0d4-ecefdd3af827" />
+
+
+THE SCAN
+<img width="894" height="322" alt="image" src="https://github.com/user-attachments/assets/f6dde994-1a46-4709-8e89-2e75c5f3fb58" />
+
+
+
+
+LOGS:
+
+<img width="828" height="338" alt="image" src="https://github.com/user-attachments/assets/2fd69491-ab54-4828-a619-a21f07a2a7c7" />
+
 
 
 ## Contributing
@@ -140,5 +155,6 @@ Under the following terms:
 For the full license text, see: https://creativecommons.org/licenses/by-nc/4.0/
 
 SPDX-License-Identifier: CC-BY-NC-4.0
+
 
 
